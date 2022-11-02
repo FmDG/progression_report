@@ -1,7 +1,7 @@
 %% Preamble
 %%------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper, oneside]{book}
+\documentclass[11pt, a4paper, oneside]{report}
 
 %% Packages
 %%------------------------------------------------------------------------------------
@@ -17,13 +17,55 @@
 
 \begin{document}
 
-\title{Progression Report}
-\author{Friso}
-\date{}
-\maketitle
+%%------------------------------------------------------------------------------------
+%% Beginning of Frontmatter
+%%------------------------------------------------------------------------------------
+
+\input{FrontBackMatter/Titlepage} % titlepage
+
+% Statement of originality
+%----------------------------------------------------------
+% \include{FrontBackMatter/Statement}  
+
+% Abstract
+%----------------------------------------------------------
+% \include{FrontBackMatter/Abstract}  
+
+
+%  Table of contents           
+%----------------------------------------------------------
+% \tableofcontents
+% \listoffigures
+% \listoftables
+
+
+
+%%------------------------------------------------------------------------------------
+%% Beginning of Mainmatter
+%%------------------------------------------------------------------------------------
 
 \include{Chapters/introduction}
 
 
+%%------------------------------------------------------------------------------------
+%% Appendices 
+%%------------------------------------------------------------------------------------
+% \appendix % resets chapter numbering, uses letters for appendix chapter numbers
 
+% \include{Chapters/Appendix}
+
+
+%%------------------------------------------------------------------------------------
+%% Beginning of Backmatter
+%%------------------------------------------------------------------------------------
+% \backmatter % turns off chapter numbering 
+
+
+% Bibliography
+%------------------------------------------------------------------
+% \bibliography{InitialFinalMaterials/Bibliography.bib}{}
+% \bibliographystyle{plain}
+
+
+% \printindex 		% to make the index
 \end{document}
