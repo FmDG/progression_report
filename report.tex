@@ -1,7 +1,7 @@
 %% Preamble
 %%------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper, oneside]{report}
+\documentclass[11pt, a4paper, oneside]{article}
 
 %% Packages
 %%------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@
 
 %  Table of contents           
 %----------------------------------------------------------
-% \tableofcontents
+\tableofcontents
 % \listoffigures
 % \listoftables
 
@@ -46,13 +46,17 @@
 
 \include{Chapters/introduction}
 
+\include{Chapters/lit_review}
+
+\include{Chapters/project_structure}
+
 
 %%------------------------------------------------------------------------------------
 %% Appendices 
 %%------------------------------------------------------------------------------------
-% \appendix % resets chapter numbering, uses letters for appendix chapter numbers
+\appendix % resets chapter numbering, uses letters for appendix chapter numbers
 
-% \include{Chapters/Appendix}
+\include{Chapters/appendix}
 
 
 %%------------------------------------------------------------------------------------
@@ -62,9 +66,10 @@
 
 
 % Bibliography
-%------------------------------------------------------------------
-% \bibliography{InitialFinalMaterials/Bibliography.bib}{}
-% \bibliographystyle{plain}
+\newpage
+
+\bibliography{All_Lib.bib}
+\bibliographystyle{apalike}
 
 
 % \printindex 		% to make the index
